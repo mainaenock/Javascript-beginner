@@ -1,0 +1,1 @@
+This is a beginner journey to learn javascript while bulding various projects
