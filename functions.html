@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, paper, scissors</title>
+</head>
+<body>
+    <button onclick="
+        playersMove('rock');
+        ">rock</button>
+    <button onclick="
+        playersMove('paper')
+    ">paper</button>
+    <button onclick="
+        playersMove('scissors')
+    ">scissors</button>
+    <script>
+        function computerMove() {
+            const number = Math.random(); 
+            let result = '';
+            if (number >= 0 && number <= 1/3) {
+                result = 'rock'
+            }
+            else if(number > 1/3 && number <= 2/3) {
+                result = 'paper'
+            }
+            else {
+                result = 'scissors'
+            }
+            return result;
+        }
+        function playersMove(choice) {
+            const result = computerMove()
+            if (result === choice) {
+                alert(`Tie. Computer chose ${result}, you chose ${choice}`)
+            }
+            else if (result === 'rock' && choice === 'paper'){
+                alert(`You Win. Computer chose ${result}, you chose ${choice}`)
+            }
+            else if (result === 'rock' && choice === 'scissors'){
+                alert(`You lose. Computer chose ${result}, you chose ${choice}`)
+            }
+            else if (result === 'paper' && choice === 'rock'){
+                alert(`You lose. Computer chose ${result}, you chose ${choice}`)
+            }
+            else if (result === 'paper' && choice === 'scissors'){
+                alert(`You Win. Computer chose ${result}, you chose ${choice}`)
+            }
+            else if (result === 'scissors' && choice === 'paper'){
+                alert(`You lose. Computer chose ${result}, you chose ${choice}`)
+            }
+            else if (result === 'scissors' && choice === 'rock'){
+                alert(`You win. Computer chose ${result}, you chose ${choice}`)
+            }
+        }
+    </script>
+</body>
+</html>
