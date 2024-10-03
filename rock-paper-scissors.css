@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(to bottom, #d18364, #ddc32d);
+    background-size: cover;
+}
+h1{
+    text-align: center;
+}
+section{
+    display: flex;
+    box-shadow: inset 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+    height: 600px;
+    margin-left: 30px;
+    margin-right: 30px;
+    position: relative;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+.buttons{
+    display: flex;
+    width: 300px;
+    position: absolute;
+    height: 50px;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+
+}
+button{
+    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.5);
+    background-image: linear-gradient(to bottom, #2189c5, #9642f7);
+    color: white;
+    font-weight: bold;
+}
+.rock button{
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-image 1s ease;
+
+
+}
+.paper button{
+    padding: 10px 18px;
+    border-radius: 5px;
+    transition: background-image 1s ease;
+
+
+}
+.scissors button{
+    padding: 10px 10px;
+    border-radius: 5px;
+    transition: background-image 1s ease;
+
+
+}
+.rock{
+    margin-left: 10px;
+    display: flex;
+    width: 100px;
+}
+.paper{
+    display: flex;
+    width: 100px;
+}
+.scissors{
+    display: flex;
+    width: 100px;
+}
+.rock button:hover{
+    cursor: pointer;
+    background-image: linear-gradient(to bottom, #9642f7, #2189c5);
+}
+.paper button:hover{
+    cursor: pointer;
+    background-image: linear-gradient(to bottom, #9642f7, #2189c5);
+
+}
+.scissors button:hover{
+    cursor: pointer;
+    background-image: linear-gradient(to bottom, #9642f7, #2189c5);
+
+}
+.rock button:active{
+    margin-left: 2px;
+    margin-top: 2px;
+    box-shadow: none;
+
+}
+.paper button:active{
+    margin-left: 2px;
+    margin-top: 2px;
+    box-shadow: none;
+}
+.scissors button:active{
+    margin-left: 2px;
+    margin-top: 2px;
+    box-shadow: none;
+}
+.reset button{
+    padding: 10px 40px;
+    border-radius: 5px;
+
+}
+.reset{
+    margin-top: 120px;
+    margin-right: 15px;
+}
+.reset button:active{
+    margin-left: 2px;
+    margin-top: 2px;
+    box-shadow: none;
+}
