@@ -38,23 +38,26 @@ button{
     background-image: linear-gradient(to bottom, #2189c5, #9642f7);
     color: white;
     font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    font-size: 20px;
 }
 .rock button{
-    padding: 10px 20px;
+    padding: 30px 50px;
     border-radius: 5px;
     transition: background-image 1s ease;
 
 
 }
 .paper button{
-    padding: 10px 18px;
+    padding: 30px 45px;
     border-radius: 5px;
     transition: background-image 1s ease;
 
 
 }
 .scissors button{
-    padding: 10px 10px;
+    padding: 30px 30px;
     border-radius: 5px;
     transition: background-image 1s ease;
 
@@ -63,15 +66,18 @@ button{
 .rock{
     margin-left: 10px;
     display: flex;
-    width: 100px;
+    width: 200px;
+    margin-right: 20px;
 }
 .paper{
     display: flex;
-    width: 100px;
+    width: 200px;
+    margin-right: 20px;
+
 }
 .scissors{
     display: flex;
-    width: 100px;
+    width: 200px;
 }
 .rock button:hover{
     cursor: pointer;
@@ -104,13 +110,12 @@ button{
     box-shadow: none;
 }
 .reset button{
-    padding: 10px 40px;
-    border-radius: 5px;
+    padding: 30px 80px;
 
 }
 .reset{
-    margin-top: 120px;
-    margin-right: 15px;
+    margin-top: 200px;
+    margin-left: 20px;
 }
 .reset button:active{
     margin-left: 2px;
