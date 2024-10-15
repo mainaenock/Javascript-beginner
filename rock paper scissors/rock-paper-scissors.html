@@ -33,11 +33,13 @@
         </div>
     </section>
     <script>
-        const score = {
+        let score = JSON.parse(localStorage.getItem('score')) || {
             wins: 0,
             loses: 0,
             ties: 0
         };
+
+         
         function computerMove () {
             number = Math.random();
             let result = '';
@@ -81,6 +83,8 @@
                 results = 'reset'
             }
             final(results, choice, comp);
+            localStorage.setItem('score', JSON.stringify(score));
+
 
 
         }
@@ -105,6 +109,7 @@
                 score.wins = 0;
                 score.ties = 0;
             }
+
         }
         
     </script>
